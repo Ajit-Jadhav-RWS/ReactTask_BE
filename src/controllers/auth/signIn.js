@@ -1,8 +1,8 @@
-const User = require("../models/schema/userSchema");
-const apiResponse = require("../utils/apiResponse");
-const token = require("../utils/jwtTokenGenerator");
+const User = require("../../models/schema/userSchema");
+const apiResponse = require("../../utils/apiResponse");
+const token = require("../../utils/jwtTokenGenerator");
 
-const { comparePassword } = require("../utils/bcrypt");
+const { comparePassword } = require("../../utils/bcrypt");
 async function signIn(req, res) {
   try {
     const user = await User.findOne({ email: req.body.email });

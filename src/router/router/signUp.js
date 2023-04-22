@@ -2,7 +2,7 @@ const express=require("express")
 const router = express.Router();
 const schema = require("../../models/joi/signUp");
 const apiResponse = require("../../utils/apiResponse");
-const signUp = require("../../controllers/signUp");
+const signUp = require("../../controllers/auth/signUp");
 
 router.post('/signUp', async (req, res) => {
     try { 

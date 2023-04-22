@@ -2,7 +2,7 @@ const express=require("express")
 const router = express.Router();
 const schema = require("../../models/joi/signIn");
 const apiResponse = require("../../utils/apiResponse");
-const signIn = require("../../controllers/signIn");
+const signIn = require("../../controllers/auth/signIn");
 router.post('/signIn', async (req, res) => {
     try { 
         await schema.validateAsync(req.body);

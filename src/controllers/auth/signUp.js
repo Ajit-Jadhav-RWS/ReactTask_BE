@@ -1,6 +1,6 @@
-const User = require("../models/schema/userSchema");
-const apiResponse = require("../utils/apiResponse");
-const { hashPassword } = require("../utils/bcrypt");
+const User = require("../../models/schema/userSchema");
+const apiResponse = require("../../utils/apiResponse");
+const { hashPassword } = require("../../utils/bcrypt");
 async function signUp(req, res) {
   try {
     const user = await User.findOne({ email: req.body.email });

@@ -1,7 +1,7 @@
 const express=require("express")
 const router = express.Router();
 const apiResponse = require("../../utils/apiResponse");
-const tokenvalidator = require("../../controllers/tokenValidator");
+const tokenvalidator = require("../../controllers/auth/tokenValidator");
 
 router.get('/verify', async (req, res) => {
     try { 

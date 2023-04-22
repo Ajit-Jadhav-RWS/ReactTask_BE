@@ -1,6 +1,6 @@
-const verifyToken = require("../utils/jwtTokenVerify");
+const verifyToken = require("../../utils/jwtTokenVerify");
 
-const apiResponse = require("../utils/apiResponse");
+const apiResponse = require("../../utils/apiResponse");
 async function tokenvalidator(req, res) {
 	console.log("Reached Token Validator");
 	const headers = req.headers;
