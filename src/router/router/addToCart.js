@@ -2,7 +2,7 @@ const express=require("express")
 const router = express.Router();
 const cartSchema = require("../../models/joi/cartSchema");
 const apiResponse = require("../../utils/apiResponse");
-const addToCart = require("../../controllers/addToCart");
+const addToCart = require("../../controllers/cart/addToCart");
 router.post('/addToCart', async (req, res) => {
     try { 
        await cartSchema.validateAsync(req.body);

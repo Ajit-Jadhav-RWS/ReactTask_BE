@@ -5,7 +5,6 @@ async function tokenvalidator(req, res) {
 	console.log("Reached Token Validator");
 	const headers = req.headers;
     try {
-        console.info(JSON.stringify(headers));
         const result = await verifyToken(headers.accesstoken);
         if(result.error) throw(result.error)
         res.status(200).send({result});

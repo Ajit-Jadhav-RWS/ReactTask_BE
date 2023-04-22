@@ -1,5 +1,3 @@
-
-const apiResponse = require("./apiResponse");
 const User = require("../models/schema/userSchema");
 const jwt = require("jsonwebtoken");
 async function verifyToken(token) {

@@ -1,10 +1,10 @@
 const express=require("express")
 const router = express.Router();
 const apiResponse = require("../../utils/apiResponse");
-const removeFromCart = require("../../controllers/cart/removeFromCart");
-router.patch('/removeFromCart/:id', async (req, res) => {
+const getAllProduct = require("../../controllers/product/getAllProduct");
+router.get('/getAllProduct', async (req, res) => {
     try { 
-        await removeFromCart(req,res)
+        await getAllProduct(req,res)
     } catch (error) {
             return res.status(400).send(apiResponse.error(error,400));
     }
