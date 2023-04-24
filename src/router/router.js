@@ -16,6 +16,7 @@ Router.get("/getById/:id",router.getById)
 Router.post("/addToCart",router.addToCart)
 Router.patch("/removeFromCart/:id",router.removeFromCart)
 Router.get("/getAllFromCart",router.getAllFromCart)
+Router.delete("/removeAll",router.removeAll)
 
 
 module.exports = Router;

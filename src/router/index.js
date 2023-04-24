@@ -6,7 +6,7 @@ const removeFromCart = require("./router/removeFromCart");
 const getAllFromCart = require("./router/getAllFromCart");
 const addProduct = require("./router/addProduct");
 const getAllProduct = require("./router/getAllProduct");
-
+const removeAll=require("./router/removeAll")
 const getById = require("./router/getById");
 module.exports = {
   signUp,
@@ -17,5 +17,6 @@ module.exports = {
   getAllFromCart,
   addProduct,
   getAllProduct,
-  getById
+  getById,
+  removeAll
 };
