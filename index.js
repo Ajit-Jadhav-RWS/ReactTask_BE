@@ -1,5 +1,5 @@
 require("dotenv").config();
-const mongoo = require("./src/config/dbConnection");
+const mongoo = require("./src/connection/dbConnection");
 const app = require("./src/app");
 const port = process.env.PORT;
 mongoo.connectToMongoDb();
