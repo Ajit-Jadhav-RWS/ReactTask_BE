@@ -1,4 +1,6 @@
 const mongoose = require('mongoose');
+
+//const url="mongodb://localhost:27017/user"
 const url = 'mongodb+srv://ajit06jadhav:7qwertyuiop8@cluster0.kmqrgwy.mongodb.net/user?retryWrites=true&w=majority'
 
 // connecting to database
